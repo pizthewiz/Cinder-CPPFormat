@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+    name="cppformat"
+    id="com.chordedconstructions.cinder-cppformat"
+    git="https://github.com/pizthewiz/Cinder-CPPFormat.git"
+    author="Jean-Pierre Mouilleseaux, Victor Zverovich"
+    summary="Small, safe and fast formatting"
+    version="1.1.0"
+    url="https://github.com/pizthewiz/Cinder-CPPFormat"
+    library="http://cppformat.github.io/"
+    >
+    <includePath>include</includePath>
+    <includePath>lib/cppformat</includePath>
+
+    <header>include/Cinder-CPPFormat.h</header>
+
+    <header>lib/cppformat/format.h</header>
+    <source>lib/cppformat/format.cc</source>
+
+    <copyExclude>samples</copyExclude>
+</block>
+</cinder>
