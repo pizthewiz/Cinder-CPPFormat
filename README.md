@@ -13,7 +13,7 @@ std::string s = fmt::format("{0}{1}{0}", "abra", "cad");
 // s == "abracadabra"
 
 // printf-like numeric formatting:
-std::string s = fmt::format("π {:.3f}", 3.1415926535f);
+std::string s = fmt::format("π {:.2f}", 3.1415926535f);
 // s == "π 3.14"
 
 // Errors in format strings are reported via exceptions to prevent buffer overflows:
