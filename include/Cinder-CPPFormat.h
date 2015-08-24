@@ -9,3 +9,10 @@
 #pragma once
 
 #include "format.h"
+
+namespace Cinder { namespace Format {
+
+// NB: a `Color` type is defined in the `fmt` namespace
+using namespace fmt;
+
+}}
