@@ -39,10 +39,11 @@ fmt::MemoryWriter w;
 w << 42;           // replaces itoa(42, buffer, 10)
 w << fmt::hex(42); // replaces itoa(42, buffer, 16)
 ```
-See the [C++ Format documentation](http://cppformat.github.io/1.1.0/index.html) and particularly the [format string syntax](http://cppformat.github.io/1.1.0/syntax.html) for more detail.
+
+The `fmt::format` macros have been aliased in the `Cinder::Format` namespace to help avoid potential issues caused by using the `fmt` namespace which defines its own `Color` type. See the [C++ Format documentation](http://cppformat.github.io/1.1.0/index.html) and particularly the [format string syntax](http://cppformat.github.io/1.1.0/syntax.html) for more detail on usage.
 
 ### WHAT OF BOOST?
-Use of the Boost library is [being deprecated within Cinder](https://forum.libcinder.org/topic/transitioning-to-cinder-0-9-0), CinderBlock authors are encouraged to not rely on it and `Boost Format` is quite a bit slower at compile _and_ run time - see the [C++ Format README](https://github.com/cppformat/cppformat#boost-format-library) for more details.
+Use of the Boost library is [being deprecated within Cinder](https://forum.libcinder.org/topic/transitioning-to-cinder-0-9-0), CinderBlock authors are encouraged to not rely on it and `Boost Format` is quite a bit slower at compile _and_ run time - see the [C++ Format README](https://github.com/cppformat/cppformat#boost-format-library) for more benchmark details.
 
 ### GREETZ
 - [Victor Zverovich](https://github.com/vitaut) and his [C++ Format](https://github.com/cppformat/cppformat) library
